@@ -1,0 +1,316 @@
+body {
+  padding: 10px;
+  background-color: #f6f6ef;
+  font-size: 125%;
+}
+
+h1 {
+  text-align: center;
+  color: #65277d;
+  font-size: 60px;
+  padding: 30px;
+  line-height: 250px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+h3 {
+  border-top: #65277d solid;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p {
+  padding: 20px;
+}
+
+img {
+  transition: transform 0.5s ease-in-out;
+  width: 90%;
+  padding: 20px;
+  margin: 5px 10px 20px 15px;
+  border: solid #d9b2dc 5px;
+  border-radius: 10%;
+  border-style:dotted;
+}
+
+img:hover {
+  transform: rotateY(180deg);
+  border-color: #f1c40f;
+  border-style: double;
+}
+
+
+dt {
+  margin-top: 15px;
+  font-family: monospace;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  margin-bottom: 15px;
+}
+
+dd {
+  font-family: monospace;
+  font-size: 24px;
+}
+footer {
+  background: linear-gradient(
+    90deg,
+    #eae7ee 0%,
+    #d0c8dd 25%,
+    #bea0de 70%,
+    #a681c4 100%
+  );
+  font-size: 15px;
+}
+
+li {
+  display: inline-block;
+}
+
+.active{
+  text-decoration:rgb(164, 50, 187) underline;
+  text-underline-offset: 8px;
+}
+
+img:hover {
+  opacity: 0.3;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline;
+  padding: 100px 10px 50px 10px;
+  margin: 50px 0px 20px 20px;
+  font-size: 20px;
+}
+
+img:nth-child(2n + 1) {
+  box-shadow: 10px 0px 10px rgb(171, 110, 179),
+    -10px 0px 10px rgb(171, 102, 196);
+}
+
+body {
+  background-image: url(../images/background.jpeg);
+  font-family: "Open Sans", sans-serif;
+}
+
+i {
+  padding: 4px;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    animation: tada 1s;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+    font-size: 1rem;
+  }
+
+  @keyframes tada {
+    from {
+        transform: scale3d(1, 1, 1)
+    }
+    10%, 20% {
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    }
+    30%, 50%, 70%, 90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    }
+    40%, 60%, 80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    }
+    to {
+        transform: scale3d(1, 1, 1)
+    }
+  }
+
+  dl {
+    padding-top: 10px;
+  }
+
+  dt {
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 24px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 15px;
+  }
+
+  dd {
+    font-size: 20px;
+  }
+  
+  p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.grid {
+  width: 90%;
+  margin: auto;
+  border-radius: 30px;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+.grid div {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 45%; /*changed from 30% to 45%*/
+  margin-bottom: 20px;
+  margin-right: 20px; /*create some space between the elements*/
+}
+
+
+.grid img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.grid ul li{
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-top: 0px;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .grid div {
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    animation: tada 1s;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+    font-size: 1.5rem; /* increase font size for easier reading */
+  }
+
+  dl {
+    padding-top: 10px;
+  }
+
+  dt {
+    margin-top: 15px;
+    font-size: 2rem; /* increase font size for easier reading */
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 15px;
+  }
+
+  dd {
+    font-size: 1.5rem; /* increase font size for easier reading */
+  }
+
+  p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem; /* increase font size for easier reading */
+  }
+
+  .grid {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .grid div {
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+  .grid ul li{
+    margin-left: 20px; /* reduce left margin */
+    margin-bottom: 10px; /* reduce bottom margin */
+    margin-right: 0px;
+    margin-top: 0px;
+    line-height: 1;
+    font-size: 1.5rem; /* increase font size for easier reading */
+  }
+
+}}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  margin: 10;
+  padding: 10;
+  display: flex;
+  justify-content:center;
+}
+
+nav ul li {
+  padding: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #65277d;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #65277d;
+}
+
+
